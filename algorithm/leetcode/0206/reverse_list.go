@@ -1,4 +1,4 @@
-package _06
+package leetcode
 
 import "CrazyCollin/personalProjects/fantastic-go/algorithm/structures"
 
