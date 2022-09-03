@@ -1,3 +1,3 @@
-module CrazyCollin/personalProjects/fantastic-go
+module fantastic-go
 
 go 1.17
