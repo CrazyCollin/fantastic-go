@@ -1,1 +1,5 @@
-package sort
+package main
+
+func mergeSort(arr []int) {
+
+}
