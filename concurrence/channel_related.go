@@ -1,4 +1,4 @@
-package concurrence
+package main
 
 func ChannelControl() {
 
