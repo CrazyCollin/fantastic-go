@@ -8,29 +8,21 @@ import (
 //单例模式保证每次调用的都是同一个对象
 //lazy加载，使用sync.Once双重检验加锁保证并发安全
 
-//
-// Singleton
-// @Description: 导出的单例模式接口
-//
-type Singleton interface {
-	foo()
-}
-
 var (
-	instance singleton
+	instance *singleton
 	once     sync.Once
 )
 
 type singleton struct {
 }
 
-func (s singleton) foo() {
-	fmt.Printf("i've been implanted")
-}
-
-func GetInstance() Singleton {
+func GetInstance() *singleton {
 	once.Do(func() {
-		instance = singleton{}
+		instance = new(singleton)
 	})
 	return instance
+}
+
+func (s *singleton) GetString() {
+	fmt.Println("i am a singleton")
 }

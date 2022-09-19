@@ -1,7 +1,8 @@
 package main
 
-import "fmt"
+import "fantastic-go/design-pattern/singleton"
 
 func main() {
-	fmt.Printf("%d", 7/2)
+	s := singleton.GetInstance()
+	s.GetString()
 }
