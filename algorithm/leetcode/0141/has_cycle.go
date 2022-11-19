@@ -1,6 +1,6 @@
 package leetcode
 
-import "CrazyCollin/personalProjects/fantastic-go/algorithm/structures"
+import "fantastic-go/algorithm/structures"
 
 type ListNode = structures.ListNode
 
