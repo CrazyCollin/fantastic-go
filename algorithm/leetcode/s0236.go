@@ -1,9 +1,5 @@
 package leetcode
 
-import "fantastic-go/algorithm/structures"
-
-type TreeNode = structures.TreeNode
-
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	if root == nil || root == p || root == q {
 		return root

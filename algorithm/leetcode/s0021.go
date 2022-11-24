@@ -1,9 +1,5 @@
 package leetcode
 
-import "CrazyCollin/personalProjects/fantastic-go/algorithm/structures"
-
-type ListNode = structures.ListNode
-
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	dummyNode := &ListNode{Val: -1, Next: nil}
 	curr := dummyNode

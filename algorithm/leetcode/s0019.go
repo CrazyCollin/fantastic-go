@@ -1,9 +1,5 @@
 package leetcode
 
-import "fantastic-go/algorithm/structures"
-
-type ListNode = structures.ListNode
-
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	listMap := make(map[int]*ListNode)
 	dummy, cur, count := &ListNode{}, head, 0

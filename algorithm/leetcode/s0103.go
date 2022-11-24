@@ -1,15 +1,12 @@
 package leetcode
 
-import "CrazyCollin/personalProjects/fantastic-go/algorithm/structures"
-
-type TreeNode = structures.TreeNode
-
-func levelOrder(root *TreeNode) [][]int {
+func zigzagLevelOrder(root *TreeNode) [][]int {
 	if root == nil {
 		return [][]int{}
 	}
 	queue := []*TreeNode{root}
 	res := make([][]int, 0)
+	flag := true
 	for len(queue) > 0 {
 		length := len(queue)
 		tmp := make([]int, 0, length)
@@ -20,8 +17,13 @@ func levelOrder(root *TreeNode) [][]int {
 			if queue[i].Right != nil {
 				queue = append(queue, queue[i].Right)
 			}
-			tmp = append(tmp, queue[i].Val)
+			if flag {
+				tmp = append(tmp, queue[i].Val)
+			} else {
+				tmp = append(append([]int{queue[i].Val}), tmp...)
+			}
 		}
+		flag = !flag
 		queue = queue[length:]
 		res = append(res, tmp)
 	}

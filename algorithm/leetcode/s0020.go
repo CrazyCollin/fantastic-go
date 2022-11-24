@@ -1,9 +1,7 @@
 package leetcode
 
-//
 // isValid
 // @Description:
-//
 func isValid(s string) bool {
 	if len(s) == 0 {
 		return false

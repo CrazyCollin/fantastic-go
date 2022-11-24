@@ -1,6 +1,6 @@
 package leetcode
 
-func search(nums []int, target int) int {
+func search_(nums []int, target int) int {
 	if len(nums) == 0 {
 		return -1
 	}

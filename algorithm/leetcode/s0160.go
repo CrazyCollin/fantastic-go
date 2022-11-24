@@ -1,9 +1,5 @@
 package leetcode
 
-import "fantastic-go/algorithm/structures"
-
-type ListNode = structures.ListNode
-
 func getIntersectionNode(headA, headB *ListNode) *ListNode {
 	if headA == nil || headB == nil {
 		return nil

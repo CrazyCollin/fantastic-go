@@ -1,9 +1,5 @@
 package leetcode
 
-import "CrazyCollin/personalProjects/fantastic-go/algorithm/structures"
-
-type ListNode = structures.ListNode
-
 func reverseList(head *ListNode) *ListNode {
 	var pre *ListNode
 	for head != nil {

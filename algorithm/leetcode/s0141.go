@@ -1,9 +1,5 @@
 package leetcode
 
-import "fantastic-go/algorithm/structures"
-
-type ListNode = structures.ListNode
-
 // 快慢指针
 func hasCycle(head *ListNode) bool {
 	if head == nil || head.Next == nil {

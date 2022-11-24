@@ -1,9 +1,5 @@
 package leetcode
 
-import "fantastic-go/algorithm/structures"
-
-type ListNode = structures.ListNode
-
 func sortList(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head

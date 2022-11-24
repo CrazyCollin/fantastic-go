@@ -7,7 +7,7 @@ import "sort"
 如果cs的尾部小于当前区间的尾，即有重合区域，合并： 将当前区间尾赋到cs的尾。
 */
 
-func merge(intervals [][]int) [][]int {
+func merge_(intervals [][]int) [][]int {
 	sort.Slice(intervals, func(i, j int) bool {
 		return intervals[i][0] < intervals[j][0]
 	})
