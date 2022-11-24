@@ -1,4 +1,4 @@
-package main
+package concurrent
 
 import (
 	"fmt"
@@ -37,7 +37,7 @@ func (f *FIFO) Pop() interface{} {
 	}
 }
 
-func queueUse() {
+func QueueUse() {
 	l := sync.Mutex{}
 	fifo := &FIFO{
 		mu:    l,

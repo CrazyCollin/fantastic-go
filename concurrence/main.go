@@ -1,5 +1,7 @@
 package main
 
+import "fantastic-go/concurrence/concurrent"
+
 func main() {
 	//var c Counter
 	//var wg sync.WaitGroup
@@ -26,5 +28,5 @@ func main() {
 
 	//condUse()
 
-	queueUse()
+	concurrent.QueueUse()
 }

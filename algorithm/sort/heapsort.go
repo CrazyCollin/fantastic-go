@@ -1,4 +1,4 @@
-package main
+package sort
 
 func heapSort(arr []int) []int {
 	end := len(arr) - 1
@@ -13,7 +13,7 @@ func heapSort(arr []int) []int {
 	return arr
 }
 
-//大根堆
+// 大根堆
 func heapify(arr []int, root, end int) {
 	left, right := root*2+1, root*2+2
 	for left <= end {

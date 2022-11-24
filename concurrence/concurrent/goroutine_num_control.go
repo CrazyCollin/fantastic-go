@@ -1,4 +1,4 @@
-package main
+package concurrent
 
 import (
 	"sync"
@@ -18,10 +18,8 @@ func NewGoroutineLimit(num int) *GoroutineLimit {
 	}
 }
 
-//
 // Run
 // @Description: run a goroutine
-//
 func (g *GoroutineLimit) Run(f func()) {
 	g.ch <- struct{}{}
 	go func() {
